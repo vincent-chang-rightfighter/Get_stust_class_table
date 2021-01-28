@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import requests
 import os
-os.getcwd() 
 
 with requests.Session() as s:
     page = s.get('https://course.stust.edu.tw/CourSel/Login.aspx?ReturnUrl=%2fCourSel%2fboard.aspx')
