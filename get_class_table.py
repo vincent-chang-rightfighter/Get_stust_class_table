@@ -21,8 +21,6 @@ with requests.Session() as s:
 page = s.get('https://course.stust.edu.tw/CourSel/Pages/MyTimeTable.aspx?role=S')
 soup = BeautifulSoup(page.content, 'html.parser')
 table = pd.read_html(page.text, encoding='utf-8',keep_default_na=False)[31]
-#table=table.drop(table.index[10])
 table=table.drop([9])
-#table.style.hide_index()
-table.to_csv('Result1.csv',index=0,encoding='utf-8-sig')
+table.to_csv('Class_table.csv',index=0,encoding='utf-8-sig')
 print("finish check file")
