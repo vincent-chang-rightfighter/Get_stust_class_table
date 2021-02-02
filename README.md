@@ -26,7 +26,7 @@ Requests
 ```
 
 ***
-## 程式執行完會輸出 Result1.csv
+## 程式執行完會輸出 Class_table.csv
 ### 打開即獲得本學期課表
 
 # <font color="green"> **Enjoy** </font>
